@@ -1,3 +1,5 @@
+import random
+
 class Team:
     def __init__(self, teamName):
         self.teamName = teamName
@@ -32,4 +34,7 @@ class Team:
         for n in self.blueMembers:
             memberNames.append(n.name)
         print(f'For the Blue Team we have: {memberNames}')
+
+    def getRandomTeam(self):
+        return random.randint(0, 1)
 
